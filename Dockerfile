@@ -30,4 +30,7 @@ RUN git clone https://github.com/broadinstitute/hail.git ${HAIL_HOME} && \
     pip install py4j && \
     echo 'alias pyhail="PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.3-src.zip:$HAIL_HOME/python SPARK_CLASSPATH=$HAIL_HOME/build/libs/hail-all-spark.jar python"' >> ~/.bashrc
 
-ENTRYPOINT ["pyhail"]
+ENV PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.3-src.zip:$HAIL_HOME/python \
+    SPARK_CLASSPATH=$HAIL_HOME/build/libs/hail-all-spark.jar
+
+ENTRYPOINT ["python"]
