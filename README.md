@@ -1,4 +1,4 @@
-### pyhail docker environment
+### hail python docker environment
 
 ### Note
 Built from latest hail master https://github.com/hail-is/hail
@@ -16,16 +16,18 @@ python 2.7.12 |Continuum Analytics, Inc.| (default, Jul  2 2016, 17:42:40)
 Type "help", "copyright", "credits" or "license" for more information.
 Anaconda is brought to you by Continuum Analytics.
 Please check out: http://continuum.io/thanks and https://anaconda.org
->>> import pyhail
->>> hc = pyhail.HailContext()
+>>> import hail
+>>> hc = hail.HailContext()
 >>> hc.import_vcf('src/test/resources/sample.vcf').write('sample.vds')
 >>> vds = hc.read('sample.vds')
 ```
 
 Run a python script e.g
 ```python
+import hail
+
 def main():
-     hc = pyhail.HailContext()
+     hc = hail.HailContext()
      hc.import_vcf('src/test/resources/sample.vcf').write('sample.vds')
      vds = hc.read('sample.vds')
 

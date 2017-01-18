@@ -1,7 +1,7 @@
-import pyhail
+import hail
 
 def main():
-     hc = pyhail.HailContext()
+     hc = hail.HailContext()
      hc.import_vcf('src/test/resources/sample.vcf').write('sample.vds')
      vds = hc.read('sample.vds')
 
