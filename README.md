@@ -1,7 +1,7 @@
 ### hail python docker environment
 
 ### Note
-Built from latest hail master https://github.com/hail-is/hail
+Built from latest hail master https://github.com/hail-is/hail. When hail cuts or tags a release we'll start tracking it. 
 
 ### Image
 https://hub.docker.com/r/shusson/pyhail/
