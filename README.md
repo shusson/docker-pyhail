@@ -4,7 +4,7 @@
 Built from latest hail master https://github.com/hail-is/hail. When hail cuts or tags a release we'll start tracking it. 
 
 ### Image
-https://hub.docker.com/r/shusson/pyhail/
+https://hub.docker.com/r/shusson/pyhail/ (this image is old, if I get some time I'll rebuild it off the latest Hail release, but for now I recommend building your own image)
 
 ### Examples
 
